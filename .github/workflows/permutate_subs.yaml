@@ -33,8 +33,9 @@ jobs:
           set -x ; set +e
           #--------------#
           #rClone
-          mkdir -p "$HOME/.config/rclone"
-          echo "${{ secrets.RCLONE_CF_R2_PUB }}" > "$HOME/.config/rclone/rclone.conf"
+          # --- R2 disabled for now (not storing anything there yet) ---
+          # mkdir -p "$HOME/.config/rclone"
+          # echo "${{ secrets.RCLONE_CF_R2_PUB }}" > "$HOME/.config/rclone/rclone.conf"
         continue-on-error: true
 
       - name: Initialize
