@@ -11,7 +11,6 @@ env:
   # DO NOT MODIFY ANYTHING ELSE
   INVENTORY_REPO_USER: "${{ secrets.INVENTORY_REPO_USER }}"
   INVENTORY_REPO_TOKEN: "${{ secrets.INVENTORY_REPO_TOKEN }}"
-  RCLONE_CF_R2_PUB: "${{ secrets.RCLONE_CF_R2_PUB }}"  
 #------------------------------------------------------------------------------------#
 jobs:
   Initialize:
