@@ -69,3 +69,12 @@ jobs:
           echo -e "[+] BTOP: http://$TS_DNS:7777\n"
           set +x ; while tmux has-session -t "inventory" ; do sleep 1 ; done
         continue-on-error: true
+
+      - name: Upload Permutation List
+        uses: actions/upload-artifact@v4
+        with:
+            name: inventory_permutations
+            path: |
+              /tmp/Permutations/inventory_permutations.txt
+              /tmp/PERMUTATION.md
+            if-no-files-found: warn
