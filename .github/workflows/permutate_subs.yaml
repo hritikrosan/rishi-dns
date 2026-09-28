@@ -75,7 +75,7 @@ jobs:
         continue-on-error: true
 
       - name: Upload Permutation List
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
             name: inventory_permutations
             path: |
@@ -105,7 +105,7 @@ jobs:
 
       - name: Upload Debug Log
         if: github.event_name == 'workflow_dispatch'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
             name: permutate_subs_debug_log
             path: /tmp/permutate_subs_debug_log.7z
